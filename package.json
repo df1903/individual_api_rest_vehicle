@@ -1,0 +1,23 @@
+{
+  "name": "vehicle-api",
+  "version": "1.0.0",
+  "description": "Vehicle and owner api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vehicle",
+    "owner",
+    "api",
+    "rest",
+    "api",
+    "rest"
+  ],
+  "author": "Daniel Felipe Franco Rincon",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.9",
+    "mongoose": "^6.9.2"
+  }
+}
