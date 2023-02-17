@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.9",
-    "mongoose": "^6.9.2"
+    "mongoose": "^6.9.2",
+    "mongoose-unique-validator": "^3.1.0"
   }
 }
