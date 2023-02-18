@@ -2,12 +2,13 @@
 
 // Use the mongoose package because it has the schemas internally
 const mongoose = require("mongoose");
+const validator = require("mongoose-unique-validator");
 
 /** Schema creation */
 const vehicleSchema = new mongoose.Schema({
-    owner_id:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "coll_owner",
+    owner:{
+        type: 'String',
+        // ref: "coll_owner",
         required: true
     },
     plate:{
@@ -29,22 +30,19 @@ const vehicleSchema = new mongoose.Schema({
     },
     mileage:{
         type: "Number",
-        required: true,
-        unique: true
+        required: true
     },
     brand:{
         type: "String",
-        required: true,
-        unique: true
+        required: true
     },
     capacity:{
         type: "Number",
-        required: true,
-        unique: true
+        required: true
     }
 });
 
 // unique-validation plugin
-studentSchema.plugin(validator);
+vehicleSchema.plugin(validator);
 /** schema exportation */
 module.exports = vehicleSchema;

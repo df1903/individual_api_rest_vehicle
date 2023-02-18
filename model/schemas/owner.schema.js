@@ -6,6 +6,11 @@ const validator = require("mongoose-unique-validator");
 
 /** Schema creation */
 const ownerSchema = new mongoose.Schema({
+    document:{
+        type: "String",
+        required: true,
+        unique: true
+    },
     name:{
         type: "String",
         required: true
@@ -13,11 +18,6 @@ const ownerSchema = new mongoose.Schema({
     lastname:{
         type: "String",
         required: true
-    },
-    document:{
-        type: "String",
-        required: true,
-        unique: true
     },
     phone:{
         type: "String",
